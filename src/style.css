@@ -1,0 +1,78 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100vw;
+  height: 100vh;
+  min-height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  padding: 40px;
+  margin: 0;
+}
+
+.board,
+.row {
+  display: flex;
+  gap: 4px;
+}
+
+.board {
+  flex-direction: column;
+
+  background-color: black;
+}
+
+.square {
+  aspect-ratio: 1;
+
+  outline: none;
+  border: none;
+
+  font-size: 4rem;
+  font-weight: bold;
+
+  background-color: white;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.declaration {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.reset {
+  padding: 14px;
+
+  font-size: 2rem;
+  font-weight: bold;
+
+  border: 2px solid lightskyblue;
+  border-radius: 8px;
+
+  background-color: white;
+  color: lightskyblue;
+}
+
+.reset:hover {
+  background-color: lightskyblue;
+  color: white;
+}
